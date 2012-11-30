@@ -1,0 +1,104 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 06:53:38', '2012-11-27 06:53:38', 980190962)[0m
+Mysql2::Error: Field 'Name' doesn't have a default value: INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 06:53:38', '2012-11-27 06:53:38', 980190962)
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 06:58:45', '2012-11-27 06:58:45', 980190962)[0m
+Mysql2::Error: Field 'EmailAddress' doesn't have a default value: INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 06:58:45', '2012-11-27 06:58:45', 980190962)
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (62.4ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 07:02:30', '2012-11-27 07:02:30', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 07:02:30', '2012-11-27 07:02:30', 298486374)
+  [1m[36m (31.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (15.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 07:06:02', '2012-11-27 07:06:02', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 07:06:02', '2012-11-27 07:06:02', 298486374)
+  [1m[36m (93.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 09:47:34', '2012-11-27 09:47:34', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 09:47:34', '2012-11-27 09:47:34', 298486374)
+  [1m[36m (78.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 09:49:56', '2012-11-27 09:49:56', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 09:49:56', '2012-11-27 09:49:56', 298486374)
+  [1m[36m (93.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 09:50:40', '2012-11-27 09:50:40', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 09:50:40', '2012-11-27 09:50:40', 298486374)
+  [1m[36m (46.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 11:02:23', '2012-11-27 11:02:23', 980190962)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 11:02:23', '2012-11-27 11:02:23', 298486374)
+  [1m[36m (93.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/main (49.0ms)
+Compiled jquery-ui-1.9.1.custom.min.css  (1ms)  (pid 7880)
+Compiled jquery-ui-1.9.1.custom.css  (0ms)  (pid 7880)
+Completed 200 OK in 517ms (Views: 517.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM `carrers`
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 11:03:19', '2012-11-27 11:03:19', 980190962)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `carrers` (`created_at`, `updated_at`, `id`) VALUES ('2012-11-27 11:03:19', '2012-11-27 11:03:19', 298486374)
+  [1m[36m (103.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+Processing by MainController#career as HTML
+Completed 500 Internal Server Error in 374ms
+  [1m[35m (1.0ms)[0m  ROLLBACK

@@ -1,0 +1,265 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<% @page_title = "Carrer"%>
+<%= javascript_include_tag "jquery.easing.min.js" %>
+<%= javascript_include_tag "jquery.lavalamp.min.js" %>
+
+	<script>
+	  $(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true 
+			});
+		});	
+	 </script>
+
+</head>
+
+<body>
+<div id="all_services">	
+		
+			<%= form_for(:career, :url =>{:action => 'create'}) do %>
+
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="admintable" id="tblApply">
+
+			<tr><td>
+
+																							<table cellpadding="5" cellspacing="0" border="0" width="100%" class="admintable" >
+
+									<tr>
+
+										<td width="200" colspan="2" style="font-size:18px;font-family:Verdana, Arial, Helvetica, sans-serif;font-weight:bold;color:#32468C;">
+
+											Post Your Resume										
+									  </td>
+
+									</tr>
+
+
+
+																					<tr>
+
+								<td   class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">Salutation:</td>
+
+								
+
+
+									<td>
+										<span style="margin-left:7px;">
+										<%= select(:career,:Salutation, ['Mr.', 'Mrs.','Ms.','Dr.']) %></td>
+									</span>
+								</td>						
+
+							</tr>
+
+																<tr>
+
+								<td   class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">
+
+									<label id="first_namemsg" for="first_name">Name</label>&nbsp;<font color="red">*</font>:
+
+								</td>
+
+								<td>
+										
+										<%= text_field(:career, :Name, :size => 25, :style=>"margin-left:7px;" ) %>
+										<label id="name">ex. John Smith</label>
+								</td>
+
+							</tr>
+
+																	
+																				<tr>
+
+								<td  class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">
+
+									<label id="email_addressmsg" for="email_address">Email Address</label>&nbsp;<font color="red">*</font>:
+
+								</td>
+
+								<td>
+								<%= text_field(:career, :EmailAddress, :size => 25,:style=>"margin-left:7px;") %>
+								<label id="name">ex. Smith@example.com</label>
+
+
+
+								</td>
+
+							</tr>
+
+																	<tr>
+
+								<td  class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">Current Location:</td>
+
+								<td>
+									
+
+											<%= text_field(:career, :CurrentLocation, :size => 25,:style=>"margin-left:7px;") %>
+
+								</td>						
+
+							</tr>
+
+																<tr>
+
+								<td  class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">
+
+									
+
+								</td>
+
+								
+
+								<td>
+									
+								<%= text_field(:career,:PhoneNumber, :size => 10,:id=>"pnumber",:style=>"margin-left:7px;") %>
+
+
+								<span id="p_warning" style="color:red"></span> 
+
+								</td>
+
+							</tr>
+
+																	<tr>
+
+								<td  class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">Mobile Number&nbsp;<font color="red">*</font>:</td>
+
+
+								<td>
+									
+								<%= text_field(:career, :MobileNumber, :size => 10,:id=>"mnumber",:style=>"margin-left:7px;") %>
+								<span id="m_warning" style="color:red"></span> 
+								<label id="name">Number must be 10 digit.</label>
+
+
+								</td>
+
+							</tr>
+
+																	
+
+																<tr>
+
+								<td  class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">Total Experience&nbsp;<font color="red">*</font>:</td>
+
+								
+								
+								
+								<td >
+										
+
+									<span style="margin-left:7px;">
+										<%= select(:career, :TotalExperience, ['Years','Fresher', '0-1','1','2','3','4','5','6','7','8','9','10']) %></td>
+
+								</td>
+
+
+							</tr>
+
+																													
+
+																<tr>
+
+									<td width="180" class="textfieldtitle" style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">
+
+										Please attach your resume here&nbsp;<font color="red">*</font>
+
+									</td>
+
+									
+								<td><span style="margin-left:7px;"><strong>Please copy paste your resume in below text area</strong></span></td>
+
+								</tr> 
+								
+				<!--added for captcha
+
+				<tr> 
+					<td style="font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif;">Word Verification <span style="color:red;">*</span>:</td> 
+						<td> 
+							<div style="margin-left:8px;">
+
+						      <img src="http://softenger.com/components/com_jsjobs/views/jobseeker/tmpl/captcha.php/t=2033410520" class="form_captcha" />
+
+						      <div class="lines">Type the characters you see in the picture above</div>
+
+						      <input type="text" name="captcha" value="" class="captcha" id="captcha"/>
+
+						     <button onclick="checkCaptcha()">Check it</button>
+
+						  </div> 
+						</td>	
+				</tr>  
+				-->	
+
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+
+
+							<tr>
+
+								<td>&nbsp;</td>
+
+							
+
+									
+									<!--<textarea style="width:250px;height:100px;">   </textarea> -->
+									<td><%= text_area(:career, :Resume, :style=>"width:250px;height:100px;margin-left:7px;") %>
+									
+								</td>
+
+
+								</tr>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+
+						</table>
+
+					</td>
+
+			</td></tr>
+			
+
+			<tr><td >
+
+				<table width="100%" border="0">
+
+
+
+					<tr><td width="190px">&nbsp;</td>
+
+						<td align="left" >
+
+							<!--
+							<input type="submit" style="margin-left:7px;" class="button" onclick="return chkfile();"  name="save_app" value="Save Resume"  />
+						-->
+						<%= submit_tag("Submit Resume") %> 
+
+
+
+				</td>
+
+				
+
+					</tr>
+										
+
+
+				</table>
+
+			</td></tr>
+			
+
+			</table>
+
+					<p id="notice"> <font color="red">*</font>  Fields are mandatory</p>	
+
+<% end %>
+	</div>
+	<!-- end of all_services-->
+	</div>
+	
+</body>
+<%= javascript_include_tag "jquery-1.2.3.min.js" %>
+<%= javascript_include_tag "easySlider1.5.js" %>
+<%= javascript_include_tag "jquery.easing.min.js" %>
+<%= javascript_include_tag "jquery.lavalamp.min.js" %>
+
+</html>	

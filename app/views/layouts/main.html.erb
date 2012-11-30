@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IScube ::  <%= @page_title ||= 'Page' %></title>
+
+<!-- Lava Lamp Navigation  -->
+
+
+<%= javascript_include_tag "jquery-rails.js"%>
+<%= javascript_include_tag "jquery.js" %>
+<%= javascript_include_tag "jquery-1.2.3.min.js" %>
+<%= javascript_include_tag "jquery-1.8.0.min.js" %>
+<%= javascript_include_tag "jquery-ui-1.8.23.custom.min.js" %>
+<%= javascript_include_tag "easySlider1.5.js" %>
+<%= javascript_include_tag "main.js" %>
+<%= javascript_include_tag "jquery.easing.min.js" %>
+<%= javascript_include_tag "jquery.lavalamp.min.js" %>
+
+<%= stylesheet_link_tag('style','lavalamp','jquery-ui-1.9.1.custom.min','jquery-ui-1.9.1.custom', :media => "all") %>
+
+    <script>
+        $(function() {
+            $("#1, #2, #3").lavaLamp({
+                fx: "backout",
+                speed: 700,
+                click: function(event, menuItem) {
+                    return true;
+                }
+            });
+        });
+    </script>
+    
+<!-- Sliding Gallery Navigation  -->
+	  <script>
+	  $(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true 
+			});
+		});	
+	 </script>
+    
+</head>
+
+<body>
+<div id="container" background="bg.gif">
+<div id="wrapper">
+  <!-- Begin Top Bar  -->
+<div id="topbar">
+
+  <!-- Begin LavaLamp Navigation  -->
+  <div id="nav"><ul class="lavaLampWithImage" id="1">
+        <li id="home" class="current"><%= link_to('Home', :controller=>'main', :action=>'index')%></a></li>
+        <li id="about" class="current"><%= link_to('About', :controller=>'main', :action=>'about')%></a></li>
+        <li id="services" class="current"><%= link_to('Services', :controller=>'main', :action=>'services')%></a></li>
+        <li class="current"><%= link_to('New & Pub', :controller=>'main', :action=>'news')%></a></li>
+        <li class="current"><%= link_to('Contact', :controller=>'main', :action=>'contact')%></a></li>
+		<li class="current"><%= link_to('Career', :controller=>'main', :action=>'carrer')%> </li>
+        <li class="current"><%= link_to('Blog', :controller=>'main', :action=>'blog')%></a></li>
+      </ul>
+  </div>
+  <!-- End LavaLamp Navigation  -->
+  </div>
+<!-- End Top Bar  -->
+
+<!-- Begin Header  -->
+<div id="header">
+	<div id="slider">
+			<ul>				
+				<li><a href="#"><%= image_tag("Commitment.jpg",:alt=>"",:border=>"0")  %></a></li>
+				
+				<li><a href="#"><%= image_tag("Honesty.jpg",:alt=>"",:border=>"0")  %></a></li>
+				
+				<li><a href="#"><%= image_tag("Responsibility.jpg",:alt=>"",:border=>"0")  %></a></li>
+				
+				<li><a href="#"><%= image_tag("Risk Management.jpg", :alt=>"",:border=>"0")  %></a></li>
+				
+				<li><a href="#"><%= image_tag("Systems Audit.jpg",:alt=>"",:border=>"0")  %></a></li>
+
+						
+			</ul>
+  </div>
+</div>
+<!-- End Header  -->
+
+<!-- Begin Content  -->
+<br/>
+<br/>
+<br/>
+<div id="content">
+ <%= yield %>
+ 
+      <div id="connect">
+          <%= image_tag("icon8.png", :width=>20, :height=>25) %></a> &nbsp;&nbsp; <a href="http://www.facebook.com/pages/IScube/117385148420433"><%= image_tag("icon7.png",:width=>20, :height=>25)  %></a>
+      </div>
+<!-- End Content  -->
+</div>
+</div>
+
+<!-- Begin Footer2 -->
+<div id="footer2" background="footer2.gif">
+  <div id="footer2content">
+   
+    <div style="width:300px; float:left;"> © Copyright IScube. All Rights Reserved </div> 
+	  
+  <div style="width:450px; float:right; text-align: right;"> •  <%= link_to('Home', :controller=>'main', :action=>'index')%> • <%= link_to('About', :controller=>'main', :action=>'about')%> • <%= link_to('Services', :controller=>'main', :action=>'services')%> • <%= link_to('New & Pub', :controller=>'main', :action=>'news')%> • <%= link_to('Contact', :controller=>'main', :action=>'contact')%> •  <%= link_to('Career', :controller=>'main', :action=>'carrer')%>  • <%= link_to('Blog', :controller=>'main', :action=>'blog', :target => "_blank")%>
+</div>
+</div>
+<!-- End Footer2  -->
+</body>
+<%= javascript_include_tag "easySlider1.5.js" %>
+</html>

@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<% @page_title = "About" %>
+<%= javascript_include_tag "jquery.easing.min.js" %>
+<%= javascript_include_tag "jquery.lavalamp.min.js" %>
+
+	<script>
+	  $(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true 
+			});
+		});	
+	 </script>
+
+</head>
+
+<body>
+<div id="about"> 
+
+				<b><h2>Software Development</h2></b>
+
+				<p>We are a dedicated team of professionals having expertise on Technology as well as processes. We believe people are most critical assets followed by processes and procedures. Our area of strengths are </p>
+ 
+                 <ol>
+
+					<li><p>Strong, flexible and time tested Project Management Framework</p></li>  
+
+					<li><p>Proven methodology coupled with tools in the areas of Software Designing, Development and Testing</p></li>
+
+					<li><p>Post implementation support, hand holding, training </p></li>
+
+					<li><p>Enhanced stability, flexibility and security of systems </p></li>
+
+					<li><p>Adopting internationally recognized standards </p></li>
+
+				</ol>
+<br/>
+<b><h2>Information Security Consulting</h2></b>
+
+<p>Qualified and knowledgeable professionals bring cutting edge to ISCube. We have extensive global experience in developing and delivering comprehensive information security solutions across banks, financial institutions, Governments, Public Sector entities and security establishments.</p> <p>Through our technology and industry verticals we are uniquely placed to help our clients achieve their business goals and create values to their businesses.</p>
+
+			</div>
+			<br/><br/><!-- end of about-->
+</div>
+
+</body>
+<%= javascript_include_tag "jquery-1.2.3.min.js" %>
+<%= javascript_include_tag "easySlider1.5.js" %>
+<%= javascript_include_tag "jquery.easing.min.js" %>
+<%= javascript_include_tag "jquery.lavalamp.min.js" %>
+
+</html>
