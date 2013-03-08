@@ -14,8 +14,7 @@ development:
   reconnect: false
   database: iscubeonror
   pool: 5
-  username: iscube
-  password: iscube
+  
   host: 127.0.0.1
 
 # Warning: The database defined as "test" will be erased and
@@ -27,8 +26,7 @@ test:
   reconnect: false
   database: iscubeonror_test
   pool: 5
-  username: iscube
-  password:	iscube
+  
   host: 127.0.0.1
 
 production:
@@ -37,6 +35,4 @@ production:
   reconnect: false
   database: iscubeonror_production
   pool: 5
-  username: root
-  password:
   host: 127.0.0.1
