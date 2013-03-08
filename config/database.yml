@@ -35,4 +35,6 @@ production:
   reconnect: false
   database: iscubeonror_production
   pool: 5
+  username: iscube
+  password: iscube
   
